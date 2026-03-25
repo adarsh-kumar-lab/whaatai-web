@@ -29,3 +29,17 @@ Currently configured for local execution via Ollama, WhaatAI ensures 100% data p
 2. **Pull a Model:** Open your terminal/command prompt and run:
    ```bash
    ollama pull llama3.2:3b
+3. Configure CORS: Set the environment variable to allow local browser connections:
+
+   Windows: Add a system environment variable OLLAMA_ORIGINS with the value *.
+
+   Mac/Linux: Run OLLAMA_ORIGINS="*" ollama serve in the terminal.
+
+4. Launch: Open index.html in any modern web browser.
+
+🔮 Future Scope
+Cloud API Integration: Migrating from local Ollama to serverless Cloud APIs (e.g., Groq, Gemini) for global, public deployment.
+
+Authentication: Implementing secure user login and chat history saving via cloud databases.
+
+Backend Development: Building a dedicated Node.js or Java backend to securely manage API keys and user data.
