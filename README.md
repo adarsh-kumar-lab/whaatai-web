@@ -130,8 +130,8 @@ MIT License — free to use, modify, and distribute.
 ## 👤 Author
 
 **Your Name**
-- GitHub: [@YOUR_USERNAME](https://github.com/YOUR_USERNAME)
-- LinkedIn: [your-linkedin](https://linkedin.com)
+- GitHub: @adarsh-kumar-lab , https://github.com/adarsh-kumar-lab
+- LinkedIn: www.linkedin.com/in/adarsh-kumar-tiwari-376a0b386
 
 ---
 
