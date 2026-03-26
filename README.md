@@ -1,45 +1,140 @@
-# whaatai-web
+# ⚡ WhaatAI — Free AI Chat Interface
 
+<div align="center">
 
-# ⚡ WhaatAI 
+![WhaatAI Banner](https://img.shields.io/badge/WhaatAI-RED%20EDITION-ff1a1a?style=for-the-badge&logo=lightning&logoColor=white)
+![License](https://img.shields.io/badge/License-MIT-red?style=for-the-badge)
+![HTML](https://img.shields.io/badge/HTML5-Pure%20Vanilla-ff1a1a?style=for-the-badge&logo=html5&logoColor=white)
+![CSS](https://img.shields.io/badge/CSS3-No%20Framework-cc0000?style=for-the-badge&logo=css3&logoColor=white)
+![JS](https://img.shields.io/badge/JavaScript-ES2022-ff4444?style=for-the-badge&logo=javascript&logoColor=white)
 
-WhaatAI is a modern, responsive, and blazing-fast web interface for Large Language Models (LLMs). Designed with a focus on privacy and user experience, it allows users to interact with AI for general chat, code generation, and image creation. 
+**A fully-featured AI chat interface — 100% free, zero dependencies, runs in any browser.**
 
-Currently configured for local execution via Ollama, WhaatAI ensures 100% data privacy by running inference directly on the host machine, with an architecture designed to easily scale to cloud-based APIs.
+[🚀 Live Demo](#) · [📖 Docs](#setup) · [🐛 Issues](../../issues) · [⭐ Star this repo](#)
 
-## 👨‍💻 Developer
-**Adarsh Kumar Tiwari** *B.Tech Computer Science Engineering (1st Year)* *Centurion University of Technology and Management, Bhubaneswar*
+</div>
+
+---
 
 ## ✨ Features
-* **💬 General Chat:** Fluid, responsive chat interface with markdown parsing and code syntax highlighting.
-* **👨‍💻 Code Studio:** Dedicated coding workspace with language selection, one-click copy, and file download functionality.
-* **🖼️ Image Generation:** UI ready for integration with Stable Diffusion (Automatic1111) or cloud image models.
-* **⚙️ Dynamic Settings:** Adjustable AI parameters including temperature, max tokens, and system prompts.
-* **📱 Responsive UI:** Clean, dark-mode-first design built with CSS variables and modern flexbox layouts.
+
+| Feature | Description |
+|---|---|
+| 💬 **AI Chat** | Real-time streaming chat with full markdown rendering |
+| 👾 **Code Studio** | AI-powered code generation in 9 languages |
+| 🗂️ **Chat History** | Persistent conversations saved in localStorage |
+| ⚙️ **Configurable** | Custom system prompt, temperature, max tokens |
+| 🎨 **Red Edition UI** | Custom design system with animated background grid |
+| ⚡ **Zero Dependencies** | Pure HTML, CSS, JS — no npm, no build step |
+| 🆓 **100% Free** | Uses Groq's free API tier — no credit card needed |
+
+---
+
+## 🖼️ Screenshots
+
+> _Add your screenshots here after cloning_
+
+---
+
+## 🚀 Setup
+
+### 1. Clone the repository
+```bash
+git clone https://github.com/YOUR_USERNAME/WhaatAI.git
+cd WhaatAI
+```
+
+### 2. Get a free Groq API key
+1. Go to [console.groq.com](https://console.groq.com)
+2. Sign up for free
+3. Create an API key (starts with `gsk_...`)
+4. No credit card required ✅
+
+### 3. Open in browser
+```bash
+# Just double-click index.html
+# OR serve locally:
+python -m http.server 8000
+# Then open http://localhost:8000
+```
+
+### 4. Add your API key
+- Open WhaatAI in your browser
+- Click **⚙️ Config** tab
+- Paste your Groq API key
+- Click **Save Configuration**
+
+That's it! 🎉
+
+---
+
+## 🧠 Supported Models
+
+| Model | Speed | Context | Best For |
+|---|---|---|---|
+| `llama-3.1-8b-instant` | ⚡ Fastest | 128K | Everyday chat |
+| `llama-3.3-70b-versatile` | 🧠 Smart | 128K | Complex reasoning |
+| `mixtral-8x7b-32768` | 📚 Long | 32K | Long documents |
+
+---
+
+## 🗂️ Project Structure
+
+```
+WhaatAI/
+│
+├── index.html          # Everything — single file app
+│
+└── README.md           # This file
+```
+
+> Single-file architecture — the entire app lives in `index.html`. No build tools, no node_modules, no complexity.
+
+---
 
 ## 🛠️ Tech Stack
-* **Frontend:** HTML5, CSS3, Vanilla JavaScript (ES6+)
-* **Backend Engine:** Ollama (Local AI Server)
-* **Libraries:** Highlight.js (for code formatting)
-* **Fonts:** Space Mono, Syne (via Google Fonts)
 
-## 🚀 How to Run Locally
+- **HTML5** — semantic structure
+- **CSS3** — custom design system with CSS variables, animations, grid
+- **JavaScript (ES2022)** — async/await, streaming fetch, localStorage
+- **Groq API** — ultra-fast LLM inference (free tier)
+- **Highlight.js** — syntax highlighting for code blocks
 
-1. **Install Ollama:** Download and install [Ollama](https://ollama.com/).
-2. **Pull a Model:** Open your terminal/command prompt and run:
-   ```bash
-   ollama pull llama3.2:3b
-3. Configure CORS: Set the environment variable to allow local browser connections:
+---
 
-   Windows: Add a system environment variable OLLAMA_ORIGINS with the value *.
+## 🎨 Design System
 
-   Mac/Linux: Run OLLAMA_ORIGINS="*" ollama serve in the terminal.
+The Red Edition uses a carefully crafted design system:
 
-4. Launch: Open index.html in any modern web browser.
+```css
+--r1: #ff1a1a   /* Primary red   */
+--r2: #cc0000   /* Deep crimson  */
+--r3: #ff4444   /* Soft red      */
+--r4: #ff6666   /* Highlight     */
+```
 
-🔮 Future Scope
-Cloud API Integration: Migrating from local Ollama to serverless Cloud APIs (e.g., Groq, Gemini) for global, public deployment.
+- Animated background grid
+- Glowing red accents with CSS `box-shadow`
+- `Outfit` display font + `JetBrains Mono` for code
+- Glassmorphism input area with `backdrop-filter`
+- Smooth CSS transitions on every interactive element
 
-Authentication: Implementing secure user login and chat history saving via cloud databases.
+---
 
-Backend Development: Building a dedicated Node.js or Java backend to securely manage API keys and user data.
+## 📝 License
+
+MIT License — free to use, modify, and distribute.
+
+---
+
+## 👤 Author
+
+**Your Name**
+- GitHub: [@YOUR_USERNAME](https://github.com/YOUR_USERNAME)
+- LinkedIn: [your-linkedin](https://linkedin.com)
+
+---
+
+<div align="center">
+  <strong>If you found this useful, please ⭐ star the repo!</strong>
+</div>
