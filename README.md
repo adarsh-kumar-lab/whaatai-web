@@ -565,7 +565,7 @@ MIT License — free to use, modify, distribute, and include in your own project
 Built by me, with help from Claude AI for code generation and debugging.
 
 **Replace with your info:**
-- GitHub: [@YOUR_USERNAME](https://github.com/YOUR_USERNAME)
+- GitHub: [@YOUR_USERNAME](https://github.com/adarsh-kumar-lab)
 - LinkedIn: [your-linkedin](https://linkedin.com/in/YOUR_NAME)
 
 ---
